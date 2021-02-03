@@ -42,7 +42,7 @@ You can access the main website of the project at [http://consulproject.org](htt
 Prerequisites: install git, Ruby 2.6.6, Node.js and PostgreSQL (>=9.4).
 
 ```bash
-git clone https://github.com/consul/consul.git
+git clone https://github.com/rs-dmelin/consul.git
 cd consul
 bundle install
 cp config/database.yml.example config/database.yml
