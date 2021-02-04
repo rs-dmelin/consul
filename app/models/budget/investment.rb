@@ -149,7 +149,7 @@ class Budget
       results = results.by_valuator(params[:valuator_id])                  if params[:valuator_id].present?
       results = results.by_valuator_group(params[:valuator_group_id])      if params[:valuator_group_id].present?
       results = results.by_admin(params[:administrator_id])                if params[:administrator_id].present?
-      results = results.search_by_title_or_id(params[:title_or_id].strip)  if params[:title_or_id]
+      results = results.search_by_title_or_id(params[:title_or_id].strip)  if params[:title_or_id].present?
       results = advanced_filters(params, results)                          if params[:advanced_filters].present?
 
       results = results.send(current_filter) if current_filter.present?
